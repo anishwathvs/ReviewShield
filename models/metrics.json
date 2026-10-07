@@ -1,0 +1,65 @@
+{
+  "model_type": "Multinomial Naive Bayes",
+  "feature_extractor": "TF-IDF Vectorizer",
+  "dataset_file": "fake reviews dataset.csv",
+  "total_valid_samples": 40411,
+  "training_samples": 32328,
+  "test_samples": 8083,
+  "tfidf_features": 25000,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "min_df": 3,
+  "max_features": 25000,
+  "label_mapping": {
+    "CG": "Fake",
+    "OR": "Genuine"
+  },
+  "labels": [
+    "Fake",
+    "Genuine"
+  ],
+  "accuracy": 0.8937,
+  "precision": 0.8961,
+  "recall": 0.8906,
+  "f1_score": 0.8934,
+  "confusion_matrix": [
+    [
+      3598,
+      442
+    ],
+    [
+      417,
+      3626
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n        Fake       0.90      0.89      0.89      4040\n     Genuine       0.89      0.90      0.89      4043\n\n    accuracy                           0.89      8083\n   macro avg       0.89      0.89      0.89      8083\nweighted avg       0.89      0.89      0.89      8083\n",
+  "classification_report_dict": {
+    "Fake": {
+      "precision": 0.8961394769613947,
+      "recall": 0.8905940594059406,
+      "f1-score": 0.8933581626319056,
+      "support": 4040.0
+    },
+    "Genuine": {
+      "precision": 0.8913470993117011,
+      "recall": 0.8968587682414049,
+      "f1-score": 0.8940944396498582,
+      "support": 4043.0
+    },
+    "accuracy": 0.8937275763949029,
+    "macro avg": {
+      "precision": 0.8937432881365479,
+      "recall": 0.8937264138236727,
+      "f1-score": 0.8937263011408819,
+      "support": 8083.0
+    },
+    "weighted avg": {
+      "precision": 0.8937423987926811,
+      "recall": 0.8937275763949029,
+      "f1-score": 0.8937264377752412,
+      "support": 8083.0
+    }
+  }
+}

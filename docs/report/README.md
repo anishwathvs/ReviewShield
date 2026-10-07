@@ -1,6 +1,6 @@
 # PBL Report — AI-Powered Fake Product Review Detection Using NLP
 
-`AI_Fake_Review_Detection_PBL_Report.pdf` is the print-ready A4 report (73 pages; poster on the last page).
+`AI_Fake_Review_Detection_PBL_Report.pdf` is the print-ready A4 report (58 pages; poster on the last page).
 
 ## Rebuilding
 
@@ -13,7 +13,7 @@ python docs/report/build/build_report.py
 ```
 
 The builder runs WeasyPrint twice so the contents, figure and table lists carry real page numbers,
-then adds the page-number footer and places the A3 poster (`assets/poster_A3.pdf`) as vector content on the final page.
+then adds the page-number footer and places the A3 poster (`assets/poster_A3.pdf`) upright, as vector content, on the final page.
 
 ## Sources
 
